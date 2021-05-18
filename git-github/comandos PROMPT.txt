@@ -1,0 +1,15 @@
+COMANDOS BÁSICOS CMD
+
+DIR/LS - LISTA TUDO QUE TEM NO DIRETORIO  EX: ARQUIVO/PASTAS
+LS -A - Mostra arquivos ocultos.
+CD - MUDA DE DIRETORIO
+CD.. - RETORNA PARA O DIRETORIO ANTERIOR.
+MKDIR - CRIA UM NOVO DIRETORIO.
+echo nome_arquivo > nome_arquivo.extensão
+DEL - Deleta arquivos.
+RMDIR /S /Q - Deleta diretorios. (/S Remove todas as pastas e arquivos da pasta
+especificada, além dela mesma. Utilizado para remover uma
+árvore de pastas.
+MV nome_arquivo ./nome_diretorio/ - move o arquivo para a pasta selecionada.
+/Q Modo silencioso. Não pede confirmação para remover a árvore de
+pastas ao se passar o parâmetro /S.) 

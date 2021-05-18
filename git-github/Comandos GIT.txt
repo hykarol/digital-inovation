@@ -1,0 +1,48 @@
+COMANDOS GIT
+user GITHUB: Hykarol
+PASSWORD: Hyk@r034525090
+
+SHA1 - CRIPTOGRAFIA DE 40 DIGITOS
+
+openssl sha1 nome_do_arquivo.extensão
+
+echo 'nome_arquivo' | git hash-object --stdin
+fc31e91b26cf85a55e072476de7f263c89260eb1 - GERA UM SHA1
+ou
+echo -e 'conteudo' | openssl sha1
+65b0d0dda479cc03cce59528e28961e498155f5c
+
+
+CASO QUEIRA DAR UM COMANDO QUE RETORNE O MESMO HASH SE USA:
+
+echo -e 'blob 9\0conteudo' | openssl sha1
+echo > nome_arquivo.extensão - CRIA NOVO ARQUIVO
+
+ls -a mostra arquivos ocultos
+
+COMANDOS BÁSICOS GIT
+- git init - (Cria um novo repositório, inicializa o repositório)
+- git add * - Processo para realizar o commit
+- git commit -m "string passada para ter ideia do que é o commit"
+- git status - informa o estado dos arquivos
+- git config --global user.propriedade a ser inserida por ex: email, usuario.
+- git config --global --unset user.propriedade a ser retirada.
+- git remote add origin + URL - Adiciona um repositorio ao GitHub
+- git push origin master - Também adiciona ou atualiza o repositorio.
+- git remote -v - lista os repositorios existentes no GitHub
+- git pull origin master
+- git pull origin master - puxa o conteúdo atual no repositorio, para corrigir conflitos de merge.
+- git clone + link_github a ser baixado.
+
+Tracked e Untracked
+
+Tracked - Arquivos que o GIT tem conhecimento.
+Unmodified - Arquivo ainda não modificado.
+Modified - Já foi modificado.
+Staged - Arquivos em preparação para ir para outro agrupamento.
+
+Untracked - Arquivos que o GIT não tem conhecimento.
+
+Repositorios - Working Directory -> Staging Ares -> Local Repository
+Repositorio Local - COmposto por COMMIT'S 
+
